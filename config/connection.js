@@ -1,7 +1,7 @@
 "use strict";
 
 var mysql = require("mysql");
-var password = require("./password")
+// var password = require("./password")
 
 let connection;
 
@@ -12,7 +12,8 @@ if (process.env.JAWSDB_URL) {
     host: "localhost",
     port: 3306,
     user: "root",
-    password: password,
+    password: "",
+    // password: password,
     database: "burgers_db"
   });
 }
