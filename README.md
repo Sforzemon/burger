@@ -20,3 +20,4 @@ Localhost:8080
 there you will see the beautiful burger page.  Start working on that wishlist, and then start working on eating those badboys. 
 Enjoy.
 
+![Picture of my page](https://raw.githubusercontent.com/Sforzemon/burger/master/public/assets/img/pic-o-the-page.png)
