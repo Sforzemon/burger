@@ -1,0 +1,60 @@
+<div class="container">
+  <div class="row m-4">
+    <div class="col-12 text-center">
+      <h1 class="m-3">Eat A Burger!</h1>
+    </div>
+  </div>
+
+  <div class="row">
+
+    {{!-- Get In Mah Belly! --}}
+    <div class="col-12 col-md-6 d-flex justify-content-center mb-5">
+      <form class="form w-75">
+        {{#each burger}}
+          {{#unless devoured}}
+                <div class="input-group mb-2">
+                    <input type="text" class="form-control" value="{{burger_name}}"readonly>
+                <div class="input-group-append">
+                    <button type="button" class="btn btn-secondary devour" data-id="{{id}}">Devour it!</button>
+                </div>
+                </div>
+          {{/unless}}
+        {{/each}}
+      </form>
+    </div>
+
+    {{!-- In Mah Belly! --}}
+    <div class="col-12 col-md-6 d-flex justify-content-center mb-5">
+      <form class="form w-75">
+        {{#each burger}}
+          {{#if devoured}}
+          {{!-- <div class="form-group">
+          <div class="input-group-append">
+                <button type="button" class="btn-sm btn-secondary goAgain" data-id="{{id}}">Put me back in, Coach!</button> --}}
+            <div class="input-group mb-2">
+              <input type="text" class="form-control roundTwo" value="{{burger_name}}"disabled>
+              </div>
+            {{!-- </div>
+            </div> --}}
+          {{/if}}
+        {{/each}}
+      </form>
+    </div>
+
+  </div>
+    {{!-- Add to the wishlist --}}
+  <div class="row">
+    <div class="col-12">
+      <form id="add-burger">
+        <div class="form-group">
+          {{!-- <label for="add-burger">Add Your Favorite Burger</label> --}}
+          <input type="text" class="form-control text-center" id="burger-name" placeholder="Put your tasty burger here! This is where you should type in your burger.">
+        </div>
+        <div class="text-center">
+          <button type="submit" class="btn-lg btn-secondary text-center">Put me in, Coach!!!</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+</div>

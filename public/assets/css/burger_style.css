@@ -1,0 +1,21 @@
+body {
+    height: 100vh;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    background-image: url("/assets/img/GreenChileCheeseburger.jpg"); /*fallback*/
+    background-image: url("/assets/img/GreenChileCheeseburger.jpg"), radial-gradient(circle,white, white, black);
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* background-color: rgb(182, 181, 181); */
+   }
+
+h1 {
+    color: white;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    font-size: 75px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.btn-secondary, .btn-secondary:hover, .btn-secondary:active, .btn-secondary:visited {
+    background-color: #8064A2 !important;
+}
